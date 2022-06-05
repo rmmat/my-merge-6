@@ -1,5 +1,7 @@
 package orchestra;
 
+import orchestra.section.Keyboard;
+import orchestra.section.Percussion;
 import orchestra.section.Section;
 import orchestra.section.Strings;
 
@@ -12,6 +14,8 @@ public class Orchestra {
     private Orchestra() {
         this.sections = new ArrayList<Section>();
         this.sections.add(new Strings());
+        this.sections.add(new Percussion());
+        this.sections.add(new Keyboard());
     }
 
     private void print() {
